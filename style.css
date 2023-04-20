@@ -13,7 +13,7 @@
  }
 
  #wrapper{
-    height: 100vh;
+    height: auto;
     overflow-y: auto;
     overflow-x: hidden;
  }
@@ -300,7 +300,8 @@
 
 /* Section styling */
 
-section {
+section{
+    width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -546,7 +547,7 @@ section:nth-child(2n + 1) {
   }
 
   .project-card{
-     width: 90%;
+     width: 900px;
      height: 550px;
      background-image: url(./images/Project1.png);
      background-size: cover;
@@ -683,7 +684,7 @@ section:nth-child(2n + 1) {
   #project2{
      margin-left: 120px;
      background-image: url(./img/MyResume.png);
-  }
+  } 
 
   #project3{
      background-image: url(./img/Portfolio-1.png);
