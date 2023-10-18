@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
-
+ 
  *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: 'Be Vietnam Pro', sans-serif;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
  }
 
  :root{
@@ -14,12 +14,11 @@
 
  #wrapper{
     height: auto;
-    overflow-y: auto;
-    overflow-x: hidden;
+    margin: 0 auto;
  }
 
  .container{
-    width: 1200px;
+    width: 1281px;
     margin: 0 auto; 
  }
 
@@ -28,6 +27,8 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
+    /* position: sticky;
+    top: 0; */
  }
 
 .logo{
@@ -73,10 +74,11 @@
     justify-content: center;
     align-items: center;
 
-    gap: 5rem;
+    gap: 1rem;
     margin: 4rem auto;
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
     padding-bottom: 8rem; 
+    padding-left: 4rem; 
  }
 
  .faded-text{
@@ -84,9 +86,10 @@
     font-size: 4em;
     color: rgb(224, 224, 224);
     position: absolute;
+    padding: 25px;
 
     bottom: -16%;
-    left: -2%;
+    left: -1%;
     font-weight: bold;
     transition: all 3s;
  }
@@ -96,6 +99,8 @@
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
+    width: 70%;
+    margin: 0 auto;
  }
 
  .hero-section-heading{
@@ -158,6 +163,8 @@
 
   .hero-section-right{
     position: relative;
+    padding-right: 8px;
+    margin: 0 auto;
   }
 
   .absolute{
@@ -173,7 +180,7 @@
 
   .user-pic img{
     width: 350px;
-    height: 375px;
+    height: 370px;
     z-index: -9;
   }
 
@@ -301,7 +308,7 @@
 /* Section styling */
 
 section{
-    width: 1200px;
+    width: 1281px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -366,9 +373,14 @@ section:nth-child(2n + 1) {
 
 /* Work Experience */
 
+#experience, #education, #projects, #skills-container,#contact{
+    margin: 0 auto;
+    /* width: 100%; */
+}
+
 .timeline {
     position: relative;
-    width: 75%;
+    width: 90%;
 }
 
 .timeline-box {
@@ -396,7 +408,7 @@ section:nth-child(2n + 1) {
 }
 
 .timeline-box:nth-child(2n+1)::after {
-    right: -11.8%;
+    right: -14.8%;
 }
 
 .timeline-box:nth-child(2n)::after {
@@ -526,7 +538,7 @@ section:nth-child(2n + 1) {
 
 
 .project-section{
-    background-color: rgb(231,231,231);
+    /* background-color: rgb(231,231,231); */
     margin-top: 4rem;
   }
 
@@ -538,7 +550,7 @@ section:nth-child(2n + 1) {
   }
 
   .project-container{
-    max-width: 1200px;
+    max-width: 1281px;
     margin: 0 auto;
     padding: 3rem 0;
     display: flex;
@@ -599,13 +611,13 @@ section:nth-child(2n + 1) {
   }
 
   .project-number-right{
-     right: -40px;
-     top: -45px;
+     right: -10px;
+     top: -40px;
   }
 
   .project-number-left{
-     left: 40px;
-     top: -45px;
+     left: 20px;
+     top: -40px;
   }
 
   .project-content{
@@ -622,10 +634,12 @@ section:nth-child(2n + 1) {
 
   .project-content-left{
      left: 10%;
+     bottom: 10%;
   }
 
   .project-content-right{  
      right: 10%;
+     bottom: 10%;
   }
 
   .project-skills-container{
@@ -683,16 +697,16 @@ section:nth-child(2n + 1) {
 
   #project2{
      margin-left: 120px;
-     background-image: url(./img/MyResume.png);
+     background-image: url(./img/AFS.png);
   } 
 
   #project3{
-     background-image: url(./img/Portfolio-1.png);
+     background-image: url(./img/weatherapp.png);
   }
 
   #project4{
      margin-left: 120px;
-     background-image: url(./img/Portfolio-2.png);
+     background-image: url(./img/tictactoe.png);
   }
 
   .skills-container{
@@ -777,6 +791,11 @@ section:nth-child(2n + 1) {
      margin: 15px 0;
   }
 
+.certificate{
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
 
 
 /* Contact Form */
